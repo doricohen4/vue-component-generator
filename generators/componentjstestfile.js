@@ -13,10 +13,10 @@ class ComponentJsTestGenerator {
 
         return `
 import { shallowMount } from '@vue/test-utils';
-import ${dashtoUpperCase} from './${dashtoUpperCase}.vue';
+import ${dashtoUpperCase} from './${componentName}.vue';
 let wrapper;
 beforeEach(() => {
-  wrapper = shallowMount(ValidationCell, {
+  wrapper = shallowMount(${dashtoUpperCase}, {
     propsData: {
      
       }
