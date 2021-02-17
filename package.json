@@ -1,6 +1,6 @@
 {
   "name": "ts-vue-component-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "create vue components with VUE , html ,js test and scss file",
   "main": "index.js",
   "scripts": {
