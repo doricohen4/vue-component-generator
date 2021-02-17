@@ -1,7 +1,7 @@
 {
-  "name": "vue-component-generator",
-  "version": "1.0.0",
-  "description": "create vue components with VUE , html ,jstest and scss file",
+  "name": "ts-vue-component-generator",
+  "version": "1.0.2",
+  "description": "create vue components with VUE , html ,js test and scss file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,7 @@
     "components"
   ],
   "author": "dor cohen",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/doricohen4/vue-component-generator/issues"
   },

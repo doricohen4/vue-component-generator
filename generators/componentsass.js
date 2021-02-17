@@ -8,7 +8,7 @@ class ComponentLessGenerator {
 
     getTemplate(componentName){
         return `
-.${componentName} {
+.${componentName}-wrapper {
    
     
 }

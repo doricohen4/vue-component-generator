@@ -7,9 +7,9 @@ class ComponentHtmlGenerator {
     }
 
     getTemplate(componentName){
-        return `<div class="${componentName}">
+        return `<div class="${componentName}-wrapper">
 
- ${componentName} html was generated
+ ${componentName} html file was generated
 </div>`
     }
 }

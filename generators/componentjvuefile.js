@@ -7,13 +7,14 @@ class ComponentVueGenerator {
     getTemplate(componentName) {
 
         // convert to camel case
-        let dashtoUpperCase = componentName.replace(/(-)([a-z])(?!$)/g, (text) => text.toUpperCase().substring(1));
+        let dash = componentName.replace(/(-)([a-z])(?!$)/g, (text) => text.toUpperCase().substring(1));
+        let dashtoUpperCase = dash.charAt(0).toUpperCase() + dash.slice(1);
         let camelCaseComponentName = dashtoUpperCase.replace(/^[a-z]/g, (text) => text.toUpperCase());
 
         return `
       
         <script lang="ts">
-import WithRender from './${componentName}';
+import WithRender from './${componentName}.html';
 import { Component, Vue } from 'vue-property-decorator';
 
 @WithRender
@@ -26,7 +27,7 @@ export default class  ${dashtoUpperCase} extends Vue {
 
 <style scoped lang="scss">
 
-@import './${componentName}';
+@import './${componentName}.scss';
 </style>
         
     `
