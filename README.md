@@ -8,7 +8,7 @@ npm install -g js-vue-component-generator
 ## Usage
 run the following command:
 
-vue-gen <component-name>
+vue-gen  "component-name"
 
 # NOTE
 <component-name> can be lower case letters [a-z] and dashes only
